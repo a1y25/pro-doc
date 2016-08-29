@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prospector Doc</title>
+	<link rel="stylesheet" href="bootstrap.css">
+
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">			
+				
+				<div class="page-header">
+					<h2>Fuse Prospector - Documentation</h2>
+				</div>
+
+				<h4>Sourcing > Clean</h4>
+				<h5 class="text-primary">app/lead-generation/clean/</h5>
+
+				<!-- Nav tabs -->
+				  <ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active">
+				    	<a href="#clean-controller" data-toggle="tab">controller.js</a>
+				    </li>
+				    <li><a href="#clean-route" data-toggle="tab">route.js</a></li>
+				    <li><a href="#clean-template" data-toggle="tab">template.hbs</a></li>
+				    <li><a href="#clean-diagram" data-toggle="tab">Diagram</a></li>
+				  </ul>
+
+				   <!-- Tab panes -->
+				  <div class="tab-content">
+				    <div class="tab-pane active" id="clean-controller">
+				    	<h4>queryParams:</h4>
+						<div class="well">
+							
+							<ul>
+							    <li>tabs</li>
+							    <li>error-category</li>
+							    <li>reload</li>
+							    <li>sourceid</li>
+							    <li>icpid</li>
+							    <li>userid</li>
+							    <li>page</li>
+							    <li>size</li>
+							</ul>
+						</div><!-- well -->
+
+						<h4>Properties</h4>
+						<div class="well">
+							<ul>
+								<li>
+									filterObjectList
+								</li>
+								<li>
+									<h5>errorLeads</h5>
+								</li>
+								<li>
+									<h5>errors</h5>
+								</li>
+								
+								<li>
+									<h5>selectedLeads</h5>
+								</li>
+								
+								<li>
+									<h5>countSelectedLeads</h5>
+								</li>
+								
+								<li><h5>hasSelectedLeads</h5></li>
+								<li><h5>listenHasSelect</h5></li>
+							</ul>
+							<h5 class="text-danger">Computed</h5>
+							<ul>
+								<li>
+									<h5>getEmailPatterns <small>computed</small></h5>
+								</li>
+								<li>
+									<h5>allChecked (computed)</h5>
+								</li>
+								<li>
+									<h5>visibleFilters (computed)</h5>
+								</li>
+								<li>
+									<h5>visibleFilterCategories (computed)</h5>
+								</li>
+							</ul>
+					
+						</div>
+
+						<h4>Methods</h4>
+						<div class="well">
+
+							<ul>
+								<li>
+									<h5>getUserPreferencePromise()</h5>
+								</li>
+								<li>
+									<h5>loadFilters</h5>
+								</li>
+								<li>
+									<h5>loadICPFilters</h5>
+								</li>
+								<li>
+									<h5>turnOnPremiumColumns</h5>
+								</li>
+								<li>
+									<h5>init</h5>
+									<p>
+										<small>
+										<!-- @@@ -->
+										<span class="text-danger">***</span>
+										table_views .addObject <br>
+										shared-templates/lead-generation-views/stage-view		
+										</small>
+									</p>
+								</li>
+							</ul>
+							
+							<h5 class="text-danger">Observers</h5>
+							<ul>
+								<li>
+									<h5>searchKey() <small>observer</small></h5>
+								</li>
+								<li>
+									<h5>filterObjectObserver() <small>observer</small></h5>
+								</li>
+								<li>
+									<h5>updateFilters() <small>observer</small></h5>
+								</li>
+								<li>
+									<h5>checkAllErrorFilters() <small>observer</small></h5>
+								</li>
+							</ul>
+
+							<h5 class="text-danger">Actions</h5>
+							<ul>
+								<li>
+									<h5>changesByKey() <small>action</small></h5>
+								</li>
+								<li>
+									<h5>checkMeOnly()<small></small></h5>
+								</li>
+								<li>
+									<h5>checkAllErrorFilters()</h5>
+								</li>
+								<li>
+									<h5>showEmailPatterns()</h5>
+								</li>
+								<li>
+									<h5>showEmailErrorsPossiblity()</h5>
+								</li>
+							</ul>
+						</div><!-- .well -->
+
+				    </div><!-- END CLEAN CONTROLLER -->
+				    <div class="tab-pane" id="clean-route">
+				    	<!-- =====ROUTE JS===== -->
+				    	<h4>Properites</h4>
+						<div class="well">
+							<ul>
+								<li><h5>model</h5></li>
+							</ul>
+
+							<h5 class="text-danger">Computed</h5>
+						</div>
+
+						<h4>Methods</h4>
+						<div class="well">
+						
+							<h5 class="text-danger">Actions</h5>
+							<ul>
+								<li>
+									<h5>selectAllFilters()</h5>
+									<p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A unde architecto quia repellat illum esse sit, iste natus nesciunt incidunt. Dolor excepturi, ipsam!</small></p>
+								</li>
+								<li>
+									<h5>selectNoneFilters()</h5>
+								</li>
+								<li><h5>selectOneFilters()</h5></li>
+								<li>
+									<h5>moveToConnect()</h5>
+								</li>
+								<li>
+									<h5>refreshRoute()</h5>
+								</li>
+								<li>
+									<h5>dncBulk()</h5>
+								</li>
+								<li>
+									<h5>filterStatusChanged()</h5>
+								</li>
+								<li>
+									<h5>showToolbar()</h5>
+								</li>
+								<li>
+									<h5>uploadLeads()</h5>
+								</li>
+								<li>
+									<h5>hideFilter()</h5>
+								</li>
+								<li>
+									<h5>refreshLead()</h5>
+								</li>
+								<li>
+									<h5>creates()</h5>
+								</li>
+								<li>
+									<h5>checkSearch()</h5>
+								</li>
+								<li><h5>updateQueries()</h5></li>
+								<li><h5>checkSearch()</h5></li>
+								<li>
+									<h5>updateLead()</h5>
+								</li>
+								<li>
+									<h5>closeNotification()</h5>
+								</li>
+								<li>
+									<h5>unlinkLeadBulk()</h5>
+								</li>
+								<li>
+									<h5>unlinkOne()</h5>
+								</li>
+								<li>
+									<h5>archiveLead()</h5>
+								</li>
+								<li>
+									<h5>refreshPage()</h5>
+								</li>
+								<li>
+									<h5>archiveLeads()</h5>
+								</li>
+								<li>
+									<h5>doSort()</h5>
+								</li>
+								<li>
+									<h5>unlinkLead()</h5>
+								</li>
+								<li>
+									<h5>uploadLeads()</h5>
+								</li>
+								<li><h5>archiveBulkLead()</h5></li>
+								<li><h5>selectNonLead()</h5></li>
+								<li><h5>selectAll()</h5></li>
+								<li><h5>selectAllLead()</h5></li>
+								<li><h5>archiveLeads()</h5></li>
+								<li><h5>sendToNextStage()</h5></li>
+								<li><h5>downloadLeads()</h5></li>
+								<li><h5>downloadLead()</h5></li>
+								<li><h5>moveLeadToAnotherICP()</h5></li>
+								<li>
+									<h5>chooseICPToMoveLeads()</h5>
+								</li>
+								<li>
+									<h5>needscleanLeads()</h5>
+								</li>
+								<li>
+									<h5>needsCleaning()</h5>
+								</li>
+								<li>
+									<h5>moveToICP()</h5>
+								</li>
+								<li>
+									<h5>updateTableSettings()</h5>
+								</li>
+								<li>
+									<h5>columnselectionsChanged()</h5>
+								</li>
+								<li>
+									<h5>viewselectionsChanged()</h5>
+								</li>
+								<li>
+									<h5>createCellvalue()</h5>
+								</li>
+								<li>
+									<h5>updateCellvalue()</h5>
+								</li>
+								<li>
+									<h5>selectSource()</h5>
+								</li>
+								<li>
+									<h5>selectUser()</h5>
+								</li>
+								<li>
+									<h5>selectIcp()</h5>
+								</li>
+								<li>
+									<h5>loading()</h5>
+								</li>
+								<li>
+									<h5>didTransition()</h5>
+								</li>
+								<li>
+									<h5>disableRowErrors()</h5>
+								</li>
+								<li>
+									<h5>overrideDncProbable()</h5>
+								</li>
+								<li>
+									<h5>createErrorMap()</h5>
+								</li>
+								<li>
+									<h5>computeDataIndexes()</h5>
+								</li>
+							</ul>
+						</div><!-- end .well -->
+
+				    </div><!-- .tab-pane end CLEAN ROUTE -->
+
+				    <div class="tab-pane" id="clean-template">
+				    	<div class="well">
+				    		<ul>
+				    			<li>
+				    				{{partial tableView.template}}
+				    				<br>
+				    				<small>
+				    					app/shared-templates/lead-generation-views/stage-view/template.hbs
+				    				</small>
+				    			</li>
+				    		</ul>
+				    	</div>
+
+						<h4>app/shared-templates/lead-generation-views/stage-view/template.hbs</h4>
+				    	<div class="well">
+
+				    		<ul>
+				    			<li>{{table-element-vtwo }}</li>
+				    			<li>{{#each visibleFilterCategories as |category|}}
+									<ul>
+										<li>{{#filter-category-ui}}</li>
+									</ul>
+				    			</li>
+				    			<li>source: x-select</li>
+				    			<li>user: x-select</li>
+				    			<li>profile: x-select</li>
+				    			<li>{{table-element-vtwo}}</li>
+				    		</ul>
+				    		
+				    	</div><!-- end .well -->
+						
+						<h4>/app/components/table-element-vtwo/template.hbs</h4>
+						<div class="well">
+							<ul>
+								<li>
+									<h5>Column Headers</h5>
+									{{#each columns as |column c|}}
+									<ul>
+										<li>
+											{{table-column-ui}}
+											<small>/app/components/table-column-ui/template.hbs</small>
+										</li>
+									</ul>
+
+								</li>
+
+								<li>
+									{{#each rows as |row r|}}
+									<ul>
+										<li>
+											{{#each columns as |column c|}} 
+
+											<h5 class="text-danger">helpers</h5>
+											<ul>
+												<li>check-integrity-status-class</li>
+												<li>check-integrity-status-title</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- end .well -->
+						
+						<h4>/app/components/table-column-ui/template.hbs</h4>
+						<div class="well">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+
+				    </div><!-- end TEMPLATE CLEAN -->
+
+				    <div class="tab-pane" id="clean-diagram">
+				    	<a href="images/lead-gen-clean-ember-code-flow.jpg">
+				    		<img src="images/lead-gen-clean-ember-code-flow.jpg" class="img-responsive" >
+				    	</a>
+				    </div><!-- end .tab-pane -->
+				  </div><!-- end .tab-content -->				
+
+			</div> <!-- end .col-sm-12 -->
+
+		</div>
+	</div>
+</body>
+</html>
